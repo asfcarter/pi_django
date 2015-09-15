@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+
+
+
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>Initial cricket</title></head><body>
+<div style="text-align: center;"><big><big><big>Cricket development</big></big></big><br>
+</div>
+<br>
+http://www.mediawiki.org/wiki/Manual:How_to_debughttp://www.mediawiki.org/wiki/Manual:How_to_debughttp://www.mediawiki.org/wiki/Manual:How_to_debughttp://www.mediawiki.org/wiki/Manual:How_to_debughttp://www.mediawiki.org/wiki/Manual:How_to_debugMingw:<br>
+<div style="margin-left: 40px;">Ubuntu cross compilation for Windows<br>
+</div>
+<br>
+<br>
+SDL vs OpenGL<br>
+<div style="margin-left: 40px;">Interesting chats:<br>
+</div>
+<div style="margin-left: 80px;"><a target="_blank" href="http://www.cplusplus.com/forum/beginner/89102/">http://www.cplusplus.com/forum/beginner/89102/</a><br>
+</div>
+<div style="margin-left: 80px;"><a target="_blank" href="http://www.stackoverflow.com/questions/5769031/why-are-sdl-and-opengl-related">http://www.stackoverflow.com/questions/5769031/why-are-sdl-and-opengl-related</a><br>
+</div>
+<div style="margin-left: 80px;"> I think the answer is OpenGL is just the 3D graphics accelerator whereas SDL is the IO but does not have the specific graphics.<br>
+</div>
+<br>
+SDL/OpenGL development:<br>
+<div style="margin-left: 40px;">This youtube series gives a good demonstration how to write a game in (and the author is some Slovenian schoolkid!):<br>
+<a target="_blank" href="https://www.youtube.com/user/RedReaper132/videos">https://www.youtube.com/user/RedReaper132/videos</a><br>
+(inparticular the Let's make a game in C++ is good)<br>
+<br>
+A really excellent SDL tutorial!!!!! (Can be downloaded using GIT and run)<br>
+<a href="https://github.com/Twinklebear/TwinklebearDev-Lessons">https://github.com/Twinklebear/TwinklebearDev-Lessons</a><br>
+Which has a link to the original blog:<br>
+<a href="http://twinklebeardev.blogspot.co.uk/">http://twinklebeardev.blogspot.co.uk/</a><br>
+<br>
+Another nice SDL_ttf program/example:<br>
+<a href="https://sites.google.com/site/sdlgamer/beginner/lesson-11">https://sites.google.com/site/sdlgamer/beginner/lesson-11</a><br>
+</div>
+<br>
+GLUT/FreeGLUT:<br>
+<div style="margin-left: 40px;">I think I've moved away from this
+GLUT/FreeGLUT since it's not that used and old but at one stage I
+needed to know how to build FreeGLUT statically:<br>
+<a href="http://www.transmissionzero.co.uk/computing/using-glut-with-mingw/" target="_blank">http://www.transmissionzero.co.uk/computing/using-glut-with-mingw/</a><br>
+<br>
+Not sure whether I did this but GLUT for mingw:<br>
+<a href="http://www.mingw.org/wiki/HOWTO_Compile_the_OpenGL_Utility_Toolkit_GLUT_for_Win32_with_MinGW" target="_blank">http://www.mingw.org/wiki/HOWTO_Compile_the_OpenGL_Utility_Toolkit_GLUT_for_Win32_with_MinGW</a><br>
+<br>
+Simple GLUT program:<br>
+<a href="http://singhgurjot.wordpress.com/2012/05/17/how-to-install-openglglut-libraries-in-ubuntu-12-04/" target="_blank">http://singhgurjot.wordpress.com/2012/05/17/how-to-install-openglglut-libraries-in-ubuntu-12-04/</a><br>
+And another (creates a red window inside a black window - one of my early working programs on both g++ and mingw):<br>
+<a href="http://myweb.wit.edu/wernerm/compilingOpenGl.html" target="_blank">http://myweb.wit.edu/wernerm/compilingOpenGl.html</a><br>
+</div>
+<br>
+Another one that might be useful is:<br>
+<div style="margin-left: 40px;">OpenGL Tutorial - I was just interested in how to write 2D/3D text:<br>
+<a target="_blank" href="https://www.youtube.com/watch?v=bzfoyLJICoE">https://www.youtube.com/watch?v=bzfoyLJICoE</a><br>
+</div>
+<br>
+---------<br>
+Links to libraries:<br>
+<a href="http://www.libsdl.org/projects/SDL_image/">SDL_image</a> - needs to be compiled for g++, see <a href="http://te4.org/wiki/How_to_compile">here</a><a href="http://www.libsdl.org/projects/SDL_ttf/"><br>
+SDL_ttf</a> - needs to be compiled for g++, see <a href="http://te4.org/wiki/How_to_compile">here</a><br>
+This youtube video shows how SDL2 libraries can be compiled and downloaded <a href="https://www.youtube.com/watch?v=pj45FrV7xM8" target="_blank">here</a>.<br>
+<br>
+------<br>
+<br>
+sudo apt-get install g++<br>
+sudo apt-get install ming32<br>
+<br>
+--------<br>
+In GIT how do you baseline something?<br>
+&nbsp;&nbsp;&nbsp; - There should be a baseline at c0d2da6529<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; - Where both programs do some testing
+of player, innings and use cout to write to the window. There was a
+problem with no-output when writing to DOS due to adding a windows a
+compilation flag.<br>
+<br>
+--------<br>
+Installing SDL2<br>
+- This didn't work first time, had to do sudo rm /var/lib/apt/lists/*
+-vf&nbsp;&nbsp;&nbsp;&nbsp; then sudo apt-get update&nbsp;&nbsp;&nbsp;
+before<br>
+sudo apt-get install libsdl2-dev<br>
+sudo apt-get install libsdl2-image-dev<br>
+sudo apt-get install libsdl2-mixer-dev<br>
+
+sudo apt-get install libsdl2-ttf-dev<br>
+<br>
+--------<br>
+Following the above this commit 05e20da00f now gets "ma" to work. (Windows version not tried)<br>
+
+<br>
+<br>
+</body></html>

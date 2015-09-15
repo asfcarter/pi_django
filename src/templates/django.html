@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=windows-1252" http-equiv="content-type">
+    <title>django</title>
+  </head>
+  <body>
+    <div style="text-align: center;"><big><big><big>Django</big></big></big><br>
+    </div>
+    <br>
+    <code>From Mike Hibbert <a href="https://www.youtube.com/watch?v=oT1A1KKf0SI&amp;index=1&amp;list=PLxxA5z-8B2xk4szCgFmgonNcCboyNneMD">Python
+        Django tutorial 1</a>:<br>
+    </code><code>&nbsp;&nbsp;&nbsp; Setting up a django project named "cricket":<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; On a termial do the following:
+      &nbsp;&nbsp; <br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; sudo apt-get
+      install python-setuptools</code><br>
+    <code></code><code>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      sudo easy-install virtualenv</code><br>
+    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+    virtualenv --no-site-packages django-andy<br>
+    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+    source django-andy/bin/activate<br>
+    <code>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; easy_install django</code><br>
+    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+    django-admin.py startproject cricket<br>
+    <br>
+    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Then to deactivate the virtualenv and
+    get back to your home terminal type:<br>
+    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+    deactivate<br>
+    <br>
+    &nbsp;&nbsp;&nbsp; To run your application type:<br>
+    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; cd cricket<br>
+    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; python manage.py runserver<br>
+    <br>
+    &nbsp;&nbsp;&nbsp; (note this "cricket" directory within the virtual
+    environment is usually changed to "src" to make it distinct from the
+    original directory)<br>
+    <br>
+    &nbsp;&nbsp;&nbsp; Create a database:<br>
+    &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; python manage.py migrate<br>
+    &nbsp;&nbsp;&nbsp; (Now in src there should be a file db.sqlite3 if
+    something goes wrong this could be renamed!)<br>
+    <br>
+    &nbsp; &nbsp; Create superuser:<br>
+    &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; python manage.py createsuperuser<br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    &nbsp;&nbsp;&nbsp; To make this into a live server:<br>
+    &nbsp;&nbsp;&nbsp; Setup gunicorn<br>
+    &nbsp;&nbsp;&nbsp; <br>
+    &nbsp;&nbsp;&nbsp; Setup nginx<br>
+    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; /etc/nginx/sites-enabled/default<br>
+    upstream app_server_djangoapp {<br>
+    &nbsp;&nbsp;&nbsp; server localhost:8001 fail_timeout=0;<br>
+    }<br>
+    <br>
+    server {<br>
+    &nbsp;&nbsp;&nbsp; listen&nbsp;&nbsp; 80;<br>
+    &nbsp;&nbsp;&nbsp; server_name example.com;<br>
+    &nbsp;&nbsp;&nbsp; # no security problem here, since / is alway passed to
+    upstream<br>
+    &nbsp;&nbsp;&nbsp; root /home/asfcarter/django-andy/hello;<br>
+    &nbsp;&nbsp;&nbsp; # serve directly - analogous for static/staticfiles<br>
+    &nbsp;&nbsp;&nbsp; location /media/ {<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # if asset versioning is used<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if ($query_string) {<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; expires
+    max;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
+    &nbsp;&nbsp;&nbsp; }<br>
+    &nbsp;&nbsp;&nbsp; location /admin/media/ {<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # this changes depending on your
+    python version<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; root
+    /home/asfcarter/django-andy/lib/python2.6/site-packages/django/contrib;<br>
+    &nbsp;&nbsp;&nbsp; }<br>
+    &nbsp;&nbsp;&nbsp; location / {<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; proxy_pass_header Server;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; proxy_set_header Host $http_host;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; proxy_redirect off;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; proxy_set_header X-Real-IP
+    $remote_addr;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; proxy_set_header X-Scheme
+    $scheme;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; proxy_connect_timeout 10;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; proxy_read_timeout 10;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; proxy_pass
+    http://localhost:8000/;<br>
+    &nbsp;&nbsp;&nbsp; }<br>
+    &nbsp;&nbsp;&nbsp; # what to serve if upstream is not available or crashes<br>
+    &nbsp;&nbsp;&nbsp; error_page 500 502 503 504 /media/50x.html;<br>
+    }<br>
+    <br>
+    &nbsp;&nbsp;&nbsp; port forwarding - add screenshot of BT<br>
+    &nbsp;&nbsp;&nbsp; http://192.168.1.254<br>
+    &nbsp;&nbsp;&nbsp; ifconfig<br>
+    &nbsp;&nbsp;&nbsp; noip (Add note doesn't work with www)<br>
+    <br>
+    &nbsp;&nbsp;&nbsp; sudo service nginx start<br>
+    &nbsp;&nbsp;&nbsp; gunicorn cricket.wsgi:application<br>
+    <br>
+  </body>
+</html>

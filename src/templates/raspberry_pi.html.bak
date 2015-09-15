@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <meta content="text/html; charset=windows-1252" http-equiv="content-type">
+  </head>
+  <body>raspian<br>
+    <br>
+    &nbsp;http://www.neil-black.co.uk/raspberry-pi-beginners-guide#.Vcj9Gvmh0T4<br>
+    <br>
+    How to add a cron job:<br>
+    https://www.youtube.com/watch?v=kKNenZ8Wr7s
+    <br>
+    <br>
+    How to create a git cron job:
+    <br>
+    http://stackoverflow.com/questions/4414140/git-auto-pull-using-cronjob
+    <br>
+    <br>
+    NOIP UPDATE ADDED TO RASPBERRY PI:
+    <br>
+https://www.noip.com/support/knowledgebase/installing-the-linux-dynamic-update-client-on-ubuntu/
+    <br>
+    SETTING UP STATIC ADDRESS ON RASPBERRY PI:
+    <br>
+    http://www.reuk.co.uk/Setting-up-Static-IP-Address-on-Raspberry-Pi.htm<br>
+    <br>
+    This might be useful if wlan0 works and then goes down:<br>
+    https://www.raspberrypi.org/forums/viewtopic.php?t=16054
+  </body>
+</html>

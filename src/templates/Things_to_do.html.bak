@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+    <title>Things_to_do.html</title>
+  </head>
+  <body>
+    <div style="text-align: center;"><big><big>Things to do<br>
+          <br>
+        </big></big>
+      <div style="text-align: left;"><big>Today:</big><br>
+        <div style="text-align: left;">
+          <ul>
+            <li>Put django on raspberry pi</li>
+            <li>&nbsp;&nbsp;&nbsp; Varnish chair</li>
+            <li>&nbsp;&nbsp;&nbsp; Stretch in evening</li>
+            <li>&nbsp;&nbsp;&nbsp; Phone mum</li>
+            <li>&nbsp;&nbsp;&nbsp; Phone job</li>
+          </ul>
+          <br>
+          Tomorrow:<br>
+          <ul>
+            <li>Do 2 puzzles</li>
+            <li>Stretch morning</li>
+            <li>Read 15 pages</li>
+            <li>Ice morning</li>
+            <li>&nbsp;&nbsp;&nbsp; Ice afternoon</li>
+            <li>&nbsp;&nbsp;&nbsp; Stretch + exercise afternoon</li>
+            <li><br>
+            </li>
+          </ul>
+          <ul>
+            <li>Change Lou bike pedals</li>
+            <li>Pump car tyres up</li>
+            <li>Add water to windscreen wash</li>
+            <li>Add oil to car</li>
+          </ul>
+          <ul>
+            <li>Nationwide ISA</li>
+          </ul>
+          <ul>
+            <li>Nationwide move money</li>
+          </ul>
+          <p><br>
+          </p>
+          <p>Mid-term:</p>
+        </div>
+        <ul>
+          <li>Finish GSM book</li>
+          <li>Cricket</li>
+          <li>Sort out website</li>
+          <li>spinlister.com</li>
+        </ul>
+        <big><br>
+          <big>
+          </big></big></div>
+      <div style="text-align: left;">
+        Long-term:<br>
+        <ul>
+          <li>GIT</li>
+          <li>Real-time OS<br>
+          </li>
+          <li>Code optimisation</li>
+          <li>OFDM</li>
+          <li>Wavelets</li>
+          <li>ACELP/codebook</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

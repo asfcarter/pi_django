@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+    <title>git</title>
+  </head>
+  <body>
+    <div style="text-align: center;"><big style="text-decoration: underline;"><big><big>GIT<big><big></big></big></big></big></big><br>
+    </div>
+    An interesting background to GIT:<br>
+    <div style="margin-left: 40px;"><a target="_blank" href="http://www.youtube.com/watch?v=4XpnKHJAok8">Tech
+        Talk: Linus Torvalds on git</a><br>
+    </div>
+    <br>
+    A much more useful video on GIT:<br>
+    <div style="margin-left: 40px;"><a target="_blank" href="http://www.youtube.com/watch?v=ZDR433b0HJY">Introduction
+        to Git with Scott Chacon of GitHub</a><br>
+    </div>
+    <br>
+    Pro GIT manual (this is the one Richard Brown passed on, there are a lot of
+    distributions online, here is one):<br>
+    <div style="margin-left: 40px;"><a href="http://git-scm.com/book" target="_blank">Pro
+        Git</a><br>
+    </div>
+    <br>
+    <hr style="width: 100%; height: 2px;">Some commands taken from the Scott
+    Chacon video, taken from the manual or randomly googled:<br>
+    <ul>
+      <li>git init</li>
+    </ul>
+    <div style="margin-left: 40px;">Create a new git repository<br>
+    </div>
+    <ul>
+      <li>git clone ../dir_name/</li>
+    </ul>
+    <div style="margin-left: 40px;">Copy a repository<br>
+    </div>
+    <ul>
+      <li>git checkout &lt;random commit number&gt;</li>
+    </ul>
+    <div style="margin-left: 40px;">The random commit number can be taken<br>
+    </div>
+    <ul>
+      <li>git checkout -b &lt;name&gt; &lt;another_branch&gt;<br>
+      </li>
+    </ul>
+    <div style="margin-left: 40px;">Changes the git repository so that the
+      named branch is taken into use, or creates a new branch in the
+      repository if the name doesn't exist based on the current repository
+      status or that pointed by the optional another_branch.<br>
+    </div>
+    <ul>
+      <li>git add .</li>
+      <li>git commit</li>
+    </ul>
+    <div style="margin-left: 40px;">Commits the current added changes. This
+      automatically brings up a file where you need to add a task description.<br>
+    </div>
+    <ul>
+      <li>git commit -m 'task description'</li>
+    </ul>
+    <div style="margin-left: 40px;">Commits the current added changes using
+      the task description. I.e. removes the git commit stage to put the
+      comment in away from the command line.<br>
+    </div>
+    <ul>
+      <li>git status</li>
+      <li>git config alias.&lt;name&gt; "&lt;rule&gt;"</li>
+      <li>git config --global alias.lol "log --oneline --graph --all --decorate"</li>
+    </ul>
+    <div style="margin-left: 40px;">so git lol is now short for git log
+      --oneline --graph --all --decorate</div>
+    <ul>
+      <li>git config --global user.name "Andrew Carter"</li>
+    </ul>
+    <div style="margin-left: 40px;">so <br>
+    </div>
+    <ul>
+      <li>git config --global user.email "&lt;name&gt;@yahoo.co.uk"</li>
+    </ul>
+    <div style="margin-left: 40px;">so <br>
+    </div>
+    <ul>
+      <li>git config --global color.ui true<br>
+      </li>
+    </ul>
+    <div style="margin-left: 40px;">so </div>
+    <ul>
+      <li>git branch</li>
+    </ul>
+    <div style="margin-left: 40px;">Shows the repository branches and identifies
+      the current working branch.<br>
+    </div>
+    <ul>
+      <li>git merge &lt;branch&gt;</li>
+    </ul>
+    <div style="margin-left: 40px;">Merges a branch with the current
+      branch. So if you create a number of branches and then merge back the
+      desired changes back into the master.<br>
+    </div>
+    <ul>
+      <li>git diff</li>
+      <li>git push<br>
+      </li>
+      <li>git fetch</li>
+      <li>Removing any changes (need to try some of the functions on this
+        webpage)</li>
+    </ul>
+    <div style="margin-left: 40px;"><a href="http://stackoverflow.com/questions/4114095/revert-to-previous-git-commit"
+        target="_blank">http://stackoverflow.com/questions/4114095/revert-to-previous-git-commit</a><br>
+      <a href="http://git-scm.com/book/en/Git-Basics-Undoing-Things">http://git-scm.com/book/en/Git-Basics-Undoing-Things</a><br>
+    </div>
+    <ul>
+      <li>git remote add origin https://github.com/asfcarter/cricket.git<br>
+      </li>
+      <li>git push origin master</li>
+    </ul>
+    <br>
+    <br>
+    sudo apt-get install git<br>
+    <br>
+    git clone https://github.com/asfcarter/cricket.git<br>
+    git fetch https://github.com/asfcarter/cricket.git<br>
+    git pull https://github.com/asfcarter/cricket.git<br>
+    <br>
+    <br>
+    another update<br>
+    <br>
+    sudo apt-get gitk<br>
+    <br>
+    <br>
+    Smartgithg gui interface<br>
+    http://www.syntevo.com/smartgit/<br>
+  </body>
+</html>
