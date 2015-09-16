@@ -1,46 +1,92 @@
 from django.views import generic
 
 class AccenturePage(generic.TemplateView):
-    template_name = "Accenture.html"
+    template_name = "html/Accenture.html"
 
 class ANPRPage(generic.TemplateView):
-    template_name = "ANPR.html"
+    template_name = "html/ANPR.html"
 
 class apachePage(generic.TemplateView):
-    template_name = "apache.html"
+    template_name = "html/apache.html"
 
 class Bands_I_likePage(generic.TemplateView):
-    template_name = "Bands_I_like.html"
+    template_name = "html/Bands_I_like.html"
 
-#class C-optimizationPage(generic.TemplateView):
-#    template_name = "C-optimization.html"
+class C_optimizationPage(generic.TemplateView):
+    template_name = "html/C_optimization.html"
 
 class cricketPage(generic.TemplateView):
-    template_name = "cricket.html"
+    template_name = "html/cricket.html"
 
 class cvPage(generic.TemplateView):
-    template_name = "cv.html"
+    template_name = "html/cv.html"
 
 class djangoPage(generic.TemplateView):
-    template_name = "django.html"
+    template_name = "html/django.html"
 
 class duPage(generic.TemplateView):
-    template_name = "du.html"
+    template_name = "html/du.html"
 
 class Energy_bus_exercisesPage(generic.TemplateView):
-    template_name = "Energy_bus_exercises.html"
+    template_name = "html/Energy_bus_exercises.html"
 
 class Energy_busPage(generic.TemplateView):
-    template_name = "Energy_bus.html"
+    template_name = "html/Energy_bus.html"
 
 class gitPage(generic.TemplateView):
-    template_name = "git.html"
-
-class homePage(generic.TemplateView):
-    template_name = "home.html"
+    template_name = "html/git.html"
 
 class hostsPage(generic.TemplateView):
-    template_name = "hosts.html"
+    template_name = "html/hosts.html"
 
 class IndexPage(generic.TemplateView):
-    template_name = "index.html"
+    template_name = "html/index.html"
+
+class javaPage(generic.TemplateView):
+    template_name = "html/java.html"
+
+class Lou_Andy_things_to_doPage(generic.TemplateView):
+    template_name = "html/Lou_Andy_things_to_do.html"
+
+class Lou_thoughtsPage(generic.TemplateView):
+    template_name = "html/Lou_thoughts.html"
+
+class ls_llPage(generic.TemplateView):
+    template_name = "html/ls_ll.html"
+
+class LTEPage(generic.TemplateView):
+    template_name = "html/LTE.html"
+
+class mapPage(generic.TemplateView):
+    template_name = "html/map.html"
+
+class mediawiki_tikiwikiPage(generic.TemplateView):
+    template_name = "html/mediawiki_tikiwiki.html"
+
+class ModulationPage(generic.TemplateView):
+    template_name = "html/Modulation.html"
+
+class nsnPage(generic.TemplateView):
+    template_name = "html/nsn.html"
+
+class raspberry_piPage(generic.TemplateView):
+    template_name = "html/raspberry_pi.html"
+
+class Real_timeOSPage(generic.TemplateView):
+    template_name = "html/Real_timeOS.html"
+
+class RenesasPage(generic.TemplateView):
+    template_name = "html/Renesas.html"
+
+class speech_codecPage(generic.TemplateView):
+    template_name = "html/speech_codec.html"
+
+class symbolic_linksPage(generic.TemplateView):
+    template_name = "html/symbolic_links.html"
+
+class The_SecretPage(generic.TemplateView):
+    template_name = "html/The_Secret.html"
+
+class Things_to_doPage(generic.TemplateView):
+    template_name = "html/Things_to_do.html"
+
