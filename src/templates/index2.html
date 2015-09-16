@@ -1,0 +1,91 @@
+{%load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Andrew Carter - Homepage</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- Bootstrap -->
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" />
+
+	<link href="http://fonts.googleapis.com/css?family=Abel|Open+Sans:400,600" rel="stylesheet" />
+
+	<style>
+
+		/* http://css-tricks.com/perfect-full-page-background-image/ */
+		html {
+			background: url("{% static 'site/img/20150407_195429-1.jpg' %}") no-repeat center center fixed; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+
+		body {
+			padding-top: 20px;
+			font-size: 12px;
+			font-family: "Open Sans",serif;
+			background: transparent;
+		}
+
+		h1 {
+			font-family: "Abel", Arial, sans-serif;
+			font-weight: 400;
+			font-size: 36px;
+		}
+
+		/* Override B3 .panel adding a subtly transparent background */
+		.panel {
+			background-color: rgba(255, 255, 255, 0.8);
+		}
+
+		.margin-base-vertical {
+			margin: 10px 0;
+		}
+
+		.margin-base-vertical-40 {
+			margin: 10px 0;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 panel panel-default">
+				<h1 class="margin-base-vertical">
+					Andrew Carter's test website
+				</h1>
+				<p>
+					This website was initially created to try Django with bootstrap3.  
+				</p>
+				<p>
+					It has references from running to work.  
+				</p>
+				<center><img class="thumbnail profpic" align="middle" width="200" src="{% static "site/img/20150408_133719.jpg" %}" alt=""></center>
+
+				<p class="margin-base-vertical-40">
+					Please click on the entry button to enter the main site:
+				</p>
+
+				<form class="margin-base-vertical">
+					<p class="text-center">
+						<button type="submit" class="btn btn-primary btn-lg">Enter</button>
+						<button type="submit" class="btn btn-success btn-lg">Admin-entry</button>
+					</p>
+					</span>
+				</form>
+
+				<div class="margin-base-vertical">
+					<small class="text-muted"><p class="text-center">Background picture Yes Tor - 19:54 7/4/2015</p></small>
+				</div>
+
+			</div><!-- //main content -->
+		</div><!-- //row -->
+	</div> <!-- //container -->
+
+</body>
+</html>
