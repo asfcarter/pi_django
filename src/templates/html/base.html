@@ -21,14 +21,18 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Home</a>
+          <a class="navbar-brand" href="home.html">
+	    <span class="glyphicon glyphicon-home">
+	    </span>
+	  </a>
+	  
         </div>
         <div class="collapse navbar-collapse bs-example-js-navbar-collapse">
           <ul class="nav navbar-nav">
             <li class="dropdown">
               
-	      <a id="drop1" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                Lou
+	      <a href="html/cricket.html">
+                Personal
                 <span class="caret"></span>
               </a>
               <ul class="dropdown-menu" aria-labelledby="drop1">
@@ -36,7 +40,6 @@
                 <li><a href="html/Things_to_do.html">Things to do</a></li>
                 <li role="separator" class="divider"></li>
                 <li><a href="html/Energy_bus.html">Energy bus</a></li>
-                <li><a href="html/Energy_bus_exercises.html">Energy bus exercises</a></li>
                 <li role="separator" class="divider"></li>
                 <li><a href="html/The_Secret.html">The secret</a></li>
                 <li role="separator" class="divider"></li>
@@ -55,16 +58,9 @@
               </a>
             </li>
             <li class="dropdown">
-              <a id="drop3" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              <a href="html/apache.html">
                 Web development
-                <span class="caret"></span>
               </a>
-              <ul class="dropdown-menu" aria-labelledby="drop3">
-                <li><a href="html/apache.html">Apache</a></li>
-                <li><a href="html/django.html">Django</a></li>
-                <li><a href="html/hosts.html">Hosts</a></li>
-                <li><a href="html/mediawiki_tikiwiki.html">Media wiki/Tiki wiki</a></li>
-              </ul>
             </li>	   	    
             <li class="dropdown">
               <a id="drop3" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" >
@@ -72,11 +68,18 @@
 		<span class="caret" ></span>
 	      </a>
               <ul class="dropdown-menu" aria-labelledby="drop3">
-                <li><a href="html/cv.html">CV</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="html/Accenture.html">Accenture</a></li>
-                <li><a href="html/nsn.html">NSN</a></li>
-                <li><a href="html/Renesas.html">Renesas</a></li>
+                  <li class="dropdown-submenu">
+                    <a href="html/cv.html">CV</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="html/nsn.html">NSN</a></li>
+                    	<li><a href="html/Renesas.html">Renesas</a></li>
+                    	<li><a href="html/Accenture.html">Accenture</a></li>
+                    	<li><a href="#">Nokia</a></li>
+                    </ul>
+                  </li>
+
+
+
                 <li role="separator" class="divider"></li>
                 <li><a href="html/ANPR.html">ANPR</a></li>
                 <li role="separator" class="divider"></li>
@@ -109,24 +112,6 @@
       </div>
 
     </div><!-- /.container -->
-
-
-
-<!-- Split button -->
-<div class="btn-group">
-  <button type="button" class="btn btn-danger">Action</button>
-  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <span class="caret"></span>
-    <span class="sr-only">Toggle Dropdown</span>
-  </button>
-  <ul class="dropdown-menu">
-    <li><a href="#">Action</a></li>
-    <li><a href="#">Another action</a></li>
-    <li><a href="#">Something else here</a></li>
-    <li role="separator" class="divider"></li>
-    <li><a href="#">Separated link</a></li>
-  </ul>
-</div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->

@@ -1,66 +1,73 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html><head>
-
-
-
-<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>apache</title></head><body>
-<div style="height: 0px;"><a href="map.html"><small><small>(Back to map page)</small></small></a><br>
-</div>
-
-
-<div style="text-align: center;"><big><big><span style="text-decoration: underline;">Apache</span></big></big><br>
-<div style="text-align: left;">How to create an apache server:<br>
-<div style="margin-left: 40px;"><a href="http://www.youtube.com/watch?v=-q8Jj4aAWYw" target="_blank">http://www.youtube.com/watch?v=-q8Jj4aAWYw</a><br>
-</div>
-<br>
-No-IP address (and/or no static IP address), good way to host a webpage without any cost:<br>
-<a href="https://www.noip.com" target="_blank">https://www.noip.com</a><br>
-<br>
-In order to route the traffic to your server you'll probably need to modify your router settings, this tutorial is a good start:<br>
-<a href="http://www.youtube.com/watch?v=GC_zc8nIAyw">http://www.youtube.com/watch?v=GC_zc8nIAyw</a><br>
-<br>
-<hr style="width: 100%; height: 2px;">
-I installed the following two components (not certain that the first is required):<br>
-<ul>
-  <li>&nbsp;&nbsp;&nbsp; sudo apt-get install apache2-bin</li>
-  <li>&nbsp;&nbsp;&nbsp; sudo apt-get install apache2</li>
-</ul>
-Initially under apache there was only one www directory where the html
-files were stored. In recent releases the html files now have their own
-subdirectory, the reason being for security, therefore this has been
-recently changed.<br>
-<br>
-Symbolic links are now used to link the git repository to the /var/www directory. This is done via a similar command to:<br>
-<ul>
-  <li>ln -s /home/asfcarter/cricket/www /var/www</li>
-</ul>
-&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; (Note: the path where the
-complete path to the git repository needs to be executable to other
-users)<br>
-<br>
-<hr style="width: 100%; height: 2px;">Initially when I used the new
-html directory I kept the old linking style to www, this was done by
-modifying the available 000 and another 000 file within
-/etc/apache/.....<br>
-<br>
-<hr style="width: 100%; height: 2px;">Restart apache:<br>
-<div style="margin-left: 40px;">sudo /etc/init.d/apache2 restart<br>
-Taken from:<br>
-<div style="margin-left: 40px;"><a href="http://www.cyberciti.biz/faq/star-stop-restart-apache2-webserver">http://www.cyberciti.biz/faq/star-stop-restart-apache2-webserver</a><br>
-</div>
-</div>
-<br>
-.htaccess files:<br>
-Not sure whether this is useful, one of the bug fixes for mediawiki mentioned it:<br>
-
-<div style="margin-left: 40px;"><a href="http://httpd.apache.org/docs/2.2/howto/htaccess.html">http://httpd.apache.org/docs/2.2/howto/htaccess.html</a>&nbsp; <br>
-  </div>
-
-<br>
-Hosts:<br>
-<a href="hosts.html">Hosts file</a><br>
-</div>
-
-
-</div>
-</body></html>
+<html>
+  <head>
+    <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+    <title>apache</title>
+  </head>
+  <body>
+    <div style="height: 0px;"><a href="map.html"><small><small>(Back to map
+            page)</small></small></a><br>
+    </div>
+    <div style="text-align: center;"><big><big><span style="text-decoration: underline;">Apache</span></big></big><br>
+      <div style="text-align: left;"><a href="html/django.html">django needs to
+          go here</a><br>
+        <br>
+        <br>
+        How to create an apache server:<br>
+        <div style="margin-left: 40px;"><a href="http://www.youtube.com/watch?v=-q8Jj4aAWYw"
+            target="_blank">http://www.youtube.com/watch?v=-q8Jj4aAWYw</a><br>
+        </div>
+        <br>
+        No-IP address (and/or no static IP address), good way to host a webpage
+        without any cost:<br>
+        <a href="https://www.noip.com" target="_blank">https://www.noip.com</a><br>
+        <br>
+        In order to route the traffic to your server you'll probably need to
+        modify your router settings, this tutorial is a good start:<br>
+        <a href="http://www.youtube.com/watch?v=GC_zc8nIAyw">http://www.youtube.com/watch?v=GC_zc8nIAyw</a><br>
+        <br>
+        <hr style="width: 100%; height: 2px;">
+        I installed the following two components (not certain that the first is
+        required):<br>
+        <ul>
+          <li>&nbsp;&nbsp;&nbsp; sudo apt-get install apache2-bin</li>
+          <li>&nbsp;&nbsp;&nbsp; sudo apt-get install apache2</li>
+        </ul>
+        Initially under apache there was only one www directory where the html
+        files were stored. In recent releases the html files now have their own
+        subdirectory, the reason being for security, therefore this has been
+        recently changed.<br>
+        <br>
+        Symbolic links are now used to link the git repository to the /var/www
+        directory. This is done via a similar command to:<br>
+        <ul>
+          <li>ln -s /home/asfcarter/cricket/www /var/www</li>
+        </ul>
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; (Note: the path where the
+        complete path to the git repository needs to be executable to other
+        users)<br>
+        <br>
+        <hr style="width: 100%; height: 2px;">Initially when I used the new
+        html directory I kept the old linking style to www, this was done by
+        modifying the available 000 and another 000 file within
+        /etc/apache/.....<br>
+        <br>
+        <hr style="width: 100%; height: 2px;">Restart apache:<br>
+        <div style="margin-left: 40px;">sudo /etc/init.d/apache2 restart<br>
+          Taken from:<br>
+          <div style="margin-left: 40px;"><a href="http://www.cyberciti.biz/faq/star-stop-restart-apache2-webserver">http://www.cyberciti.biz/faq/star-stop-restart-apache2-webserver</a><br>
+          </div>
+        </div>
+        <br>
+        .htaccess files:<br>
+        Not sure whether this is useful, one of the bug fixes for mediawiki
+        mentioned it:<br>
+        <div style="margin-left: 40px;"><a href="http://httpd.apache.org/docs/2.2/howto/htaccess.html">http://httpd.apache.org/docs/2.2/howto/htaccess.html</a>&nbsp;
+          <br> </div>
+        <br>
+        Hosts:<br>
+        <a href="hosts.html">Hosts file</a><br>
+      </div>
+    </div>
+  </body>
+</html>
