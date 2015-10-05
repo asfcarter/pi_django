@@ -90,6 +90,9 @@ class The_SecretPage(generic.TemplateView):
 class Things_to_doPage(generic.TemplateView):
     template_name = "html/Things_to_do.html"
 
+class PersonalPage(generic.TemplateView):
+    template_name = "html/Personal.html"
+
 class homePage(generic.TemplateView):
     test_me = 1
     template_name = "html/base.html"

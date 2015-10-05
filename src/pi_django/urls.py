@@ -51,5 +51,6 @@ urlpatterns = [
     url(r'The_Secret.html$', views.The_SecretPage.as_view(), name='The_Secret'),
     url(r'Things_to_do.html$', views.Things_to_doPage.as_view(), name='Things_to_do'),
     url(r'home.html$', views.homePage.as_view(), name='home'),
+    url(r'Personal.html$', views.PersonalPage.as_view(), name='Personal'),
 #    url(r'index.html$', views.Index2Page.as_view(), name='index'),
 ]

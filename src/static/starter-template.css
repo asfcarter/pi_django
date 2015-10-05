@@ -1,11 +1,11 @@
 body { 
-  padding-top: 40px; 
+  padding-top: 50px; 
   margin-bottom:20px;
 }
 
 .starter-template {
-  padding: 10px 10px;
-  text-align: left;
+  padding: 10px 100px;
+  text-align: center;
 }
 
 .navbar-default .navbar-brand:hover{
