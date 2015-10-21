@@ -5,7 +5,7 @@ body {
 
 .starter-template {
   padding: 10px 100px;
-  text-align: center;
+  text-align: left;
 }
 
 .navbar-default .navbar-brand:hover{
@@ -35,6 +35,7 @@ body {
 
 .dropdown-submenu {
     position: relative;
+
 }
 
 .dropdown-submenu>.dropdown-menu {

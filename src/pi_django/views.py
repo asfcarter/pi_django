@@ -93,6 +93,10 @@ class Things_to_doPage(generic.TemplateView):
 class PersonalPage(generic.TemplateView):
     template_name = "html/Personal.html"
 
+class SOLID_principlesPage(generic.TemplateView):
+    template_name = "html/SOLID_principles.html"
+
+
 class homePage(generic.TemplateView):
     test_me = 1
     template_name = "html/base.html"
