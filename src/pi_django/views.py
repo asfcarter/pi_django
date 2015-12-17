@@ -100,3 +100,7 @@ class SOLID_principlesPage(generic.TemplateView):
 class homePage(generic.TemplateView):
     test_me = 1
     template_name = "html/base.html"
+
+class ExcelTipsPage(generic.TemplateView):
+    test_me = 1
+    template_name = "html/Excel_tips.html"
