@@ -53,6 +53,6 @@ urlpatterns = [
     url(r'home.html$', views.homePage.as_view(), name='home'),
     url(r'Personal.html$', views.PersonalPage.as_view(), name='Personal'),
     url(r'SOLID_principles.html$', views.SOLID_principlesPage.as_view(), name='Personal'),
-    url(r'Excel_tips.html$', views.Excel_tipsPage.as_view(), name='Personal'),
+    url(r'Excel_tips.html$', views.ExceltipsPage.as_view(), name='Personal'),
 #    url(r'index.html$', views.Index2Page.as_view(), name='index'),
 ]

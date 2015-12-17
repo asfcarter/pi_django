@@ -101,6 +101,6 @@ class homePage(generic.TemplateView):
     test_me = 1
     template_name = "html/base.html"
 
-class ExcelTipsPage(generic.TemplateView):
+class ExceltipsPage(generic.TemplateView):
     test_me = 1
     template_name = "html/Excel_tips.html"
