@@ -30,6 +30,9 @@ class duPage(generic.TemplateView):
 class Energy_bus_exercisesPage(generic.TemplateView):
     template_name = "html/Energy_bus_exercises.html"
 
+class Energy_bus_exercisesMay2016Page(generic.TemplateView):
+    template_name = "html/Energy_bus_exercises_May_2016.html"
+
 class Energy_bus_exercisesApr2016Page(generic.TemplateView):
     template_name = "html/Energy_bus_exercises_Apr_2016.html"
 
