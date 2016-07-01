@@ -84,6 +84,9 @@ class mediawiki_tikiwikiPage(generic.TemplateView):
 class ModulationPage(generic.TemplateView):
     template_name = "html/Modulation.html"
 
+class MortgagePage(generic.TemplateView):
+    template_name = "html/Mortgage.html"
+
 class nsnPage(generic.TemplateView):
     template_name = "html/nsn.html"
 

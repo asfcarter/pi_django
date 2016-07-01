@@ -47,6 +47,7 @@ urlpatterns = [
     url(r'map.html$', views.mapPage.as_view(), name='map'),
     url(r'mediawiki_tikiwiki.html$', views.mediawiki_tikiwikiPage.as_view(), name='mediawiki_tikiwiki'),
     url(r'Modulation.html$', views.ModulationPage.as_view(), name='Modulation'),
+    url(r'Mortgage.html$', views.MortgagePage.as_view(), name='Mortgage'),
     url(r'nsn.html$', views.nsnPage.as_view(), name='nsn'),
     url(r'raspberry_pi.html$', views.raspberry_piPage.as_view(), name='raspberry_pi'),
     url(r'Real_timeOS.html$', views.Real_timeOSPage.as_view(), name='Real_timeOS'),
