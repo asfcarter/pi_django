@@ -42,6 +42,7 @@ urlpatterns = [
     url(r'index.html$', views.IndexPage.as_view(), name='index'),
     url(r'java.html$', views.javaPage.as_view(), name='java'),
     url(r'Lou_Andy_things_to_do.html$', views.Lou_Andy_things_to_doPage.as_view(), name='Lou_Andy_things_to_do'),
+    url(r'Lou_Andy_things_to_do_2017.html$', views.Lou_Andy_things_to_do2017Page.as_view(), name='Lou_Andy_things_to_do_2017'),
     url(r'ls_ll.html$', views.ls_llPage.as_view(), name='ls_ll'),
     url(r'LTE.html$', views.LTEPage.as_view(), name='LTE'),
     url(r'map.html$', views.mapPage.as_view(), name='map'),

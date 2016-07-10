@@ -66,6 +66,9 @@ class javaPage(generic.TemplateView):
 class Lou_Andy_things_to_doPage(generic.TemplateView):
     template_name = "html/Lou_Andy_things_to_do.html"
 
+class Lou_Andy_things_to_do2017Page(generic.TemplateView):
+    template_name = "html/Lou_Andy_things_to_do_2017.html"
+
 class Lou_thoughtsPage(generic.TemplateView):
     template_name = "html/Lou_thoughts.html"
 
