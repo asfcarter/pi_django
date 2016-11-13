@@ -62,5 +62,6 @@ urlpatterns = [
     url(r'Personal.html$', views.PersonalPage.as_view(), name='Personal'),
     url(r'SOLID_principles.html$', views.SOLID_principlesPage.as_view(), name='Personal'),
     url(r'Excel_tips.html$', views.ExceltipsPage.as_view(), name='Personal'),
+    url(r'House_plan.html$', views.HousePlanPage.as_view(), name='Personal'),
 #    url(r'index.html$', views.Index2Page.as_view(), name='index'),
 ]

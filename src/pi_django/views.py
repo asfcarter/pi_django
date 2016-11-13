@@ -123,6 +123,8 @@ class PersonalPage(generic.TemplateView):
 class SOLID_principlesPage(generic.TemplateView):
     template_name = "html/SOLID_principles.html"
 
+class HousePlanPage(generic.TemplateView):
+    template_name = "html/House_plan.html"
 
 class homePage(generic.TemplateView):
     test_me = 1
