@@ -126,6 +126,9 @@ class SOLID_principlesPage(generic.TemplateView):
 class HousePlanPage(generic.TemplateView):
     template_name = "html/House_plan.html"
 
+class VirtualMachinePage(generic.TemplateView):
+    template_name = "html/Virtual_machine.html"
+
 class homePage(generic.TemplateView):
     test_me = 1
     template_name = "html/base.html"
