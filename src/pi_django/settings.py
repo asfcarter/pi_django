@@ -25,7 +25,7 @@ SECRET_KEY = 'bn)3sdq&y%4v_mj7_p7n4_*h8*r*zbxhz-s3v!b+zn^44#z5f0'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1','192.168.1.150','asfcarter.noip.me']
 
 
 # Application definition
