@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+    <title>Virgin Media</title>
+  </head>
+  <body>
+    <div style="height: 0px;"><a href="map.html"><small><small>(Back to map
+            page)</small></small></a><a href="file:///home/acarter/cricket/www/html/www.theenergybus.com"><br>
+      </a> </div>
+    <div style="text-align: center;"><big><big><span style="text-decoration: underline;">Virgin
+            Media Change</span></big></big><br>
+      <br>
+      <div style="text-align: left;">Porting the setting from BT to Virgin Media
+        was not easy the following was required:<br>
+        <br>
+        IP Address - BT uses 198.162.1.* , Virgin uses 198.162.0.* therefore the
+        static address was requried to change.<br>
+        <br>
+        Port Forwarding - The BT hub uses default settings for a web server
+        (which I can assume to be port 80). For Virgin the port settings for
+        port forwarding are explicit. Both the internal and external ports need
+        to be set to 80 for the web server.<br>
+        <br>
+        DNZ - I'm not sure whether this is necessary, but I saw it on some
+        forums that Virgin Hub 3 had issues which required the DNZ to be set on
+        the specifically used IP address to allow traffic.<br>
+        <br>
+        Websafe - Virgin has a number of Apps on their registration form to make
+        you safe. These also block incoming services. Hence turning off websafe.<br>
+        <br>
+        A useful application was:<br>
+        <a href="http://www.canyouseeme.org/">http://www.canyouseeme.org/</a><br>
+        I set my laptop to be port forwarded on port 80 and ran that website and
+        it worked perfectly.<br>
+      </div>
+    </div>
+    <span style="color: rgb(204, 0, 0);"></span>
+  </body>
+</html>
