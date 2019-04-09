@@ -1,0 +1,36 @@
+### BEGIN INIT INFO
+# Provides: tightvncserver
+# Required-Start: $remote_fs $syslog
+# Required-Stop: $remote_fs $syslog
+# Default-Start: 2 3 4 5
+# Default-Stop: 0 1 6
+# Short-Description: Start Tight VNC Server at boot time
+# Description: Start Tight VNC Server at boot time.
+### END INIT INFO
+
+#! /bin/sh
+# /etc/init.d/tightvncserver
+
+HOME=/root
+USER=root
+export USER HOME
+
+case "$1" in
+ start)
+ echo "Starting Tight VNC Server"
+ #Insert your favoured settings for a VNC session
+ /usr/bin/tightvncserver :1 -geometry 1366x768 -depth 24
+ ;;
+ 
+stop)
+ echo "Stopping Tight VNC Server"
+ /usr/bin/tightvncserver -kill :1
+ ;;
+ 
+*)
+ echo "Usage: /etc/init.d/tightvncserver {start|stop}"
+ exit 1
+ ;;
+esac
+
+exit 0
