@@ -30,6 +30,7 @@ urlpatterns = [
     url(r'cv.html$', views.cvPage.as_view(), name='cv'),
     url(r'django.html$', views.djangoPage.as_view(), name='django'),
     url(r'du.html$', views.duPage.as_view(), name='du'),
+    url(r'Energy_bus_exercises_November_2020.html$', views.Energy_bus_exercisesNovember2020Page.as_view(), name='Energy_bus_exercisesNovember2020'),
     url(r'Energy_bus_exercises_March_2020.html$', views.Energy_bus_exercisesMarch2020Page.as_view(), name='Energy_bus_exercisesMarch2020'),
     url(r'Energy_bus_exercises_Jan_2019.html$', views.Energy_bus_exercisesJan2019Page.as_view(), name='Energy_bus_exercisesJan2019'),
     url(r'Energy_bus_exercises_Nov_2018.html$', views.Energy_bus_exercisesNov2018Page.as_view(), name='Energy_bus_exercisesNov2018'),
